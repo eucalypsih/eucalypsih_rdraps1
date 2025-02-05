@@ -10,6 +10,8 @@ fungsi log di Rust digunakan untuk menghitung logaritma dari sebuah bilangan flo
 
 
 ## result
+Kesimpulan: Tipe Result di Rust adalah alat yang sangat berguna untuk menangani kesalahan dengan cara yang aman dan eksplisit. Dengan menggunakan Result, Anda dapat meningkatkan kejelasan kode, mendorong penanganan kesalahan yang tepat, dan menghindari kesalahan yang tidak terduga di runtime. Ini adalah salah satu fitur yang membuat Rust menjadi bahasa yang kuat dan aman untuk pengembangan perangkat lunak.
+
 Rust menyediakan beberapa metode berguna untuk bekerja dengan `Result`
 * `is_ok()`: Mengembalikan true jika hasilnya adalah `Ok`.
 * `is_err()`: Mengembalikan true jika hasilnya adalah `Err`.
