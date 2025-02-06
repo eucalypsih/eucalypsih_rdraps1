@@ -24,7 +24,7 @@ Rust menyediakan beberapa metode berguna untuk bekerja dengan `Result`
 
 ## string
 * `trim()`: Untuk menghapus spasi di awal dan akhir string.
-
+* `format!()`: Untuk menggabungkan string dengan cara yang lebih fleksibel.
 
 
 
