@@ -20,3 +20,21 @@ Rust menyediakan beberapa metode berguna untuk bekerja dengan `Result`
 * `map()`: Mengubah nilai dalam `Ok` jika ada, dan tetap mempertahankan `Err`.
 * `and_then()`: Menggunakan hasil dari `Ok` untuk menghasilkan `Result` baru.
 * `unwrap_or(default)`: Mengembalikan nilai dari `Ok`, atau nilai default jika hasilnya adalah `Err`.
+
+
+## string
+* `trim()`: Untuk menghapus spasi di awal dan akhir string.
+
+
+
+
+
+
+
+
+
+
+
+
+
+## eof
