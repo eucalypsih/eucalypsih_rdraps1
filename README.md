@@ -26,6 +26,7 @@ Rust menyediakan beberapa metode berguna untuk bekerja dengan `Result`
 * `trim()`: Untuk menghapus spasi di awal dan akhir string.
 * `format!()`: Untuk menggabungkan string dengan cara yang lebih fleksibel.
 * `contains()`: Memeriksa apakah string mengandung substring tertentu.
+* `as_str()`: Anda dapat mendapatkan referensi &str dari String menggunakan metode as_str.
 
 
 
