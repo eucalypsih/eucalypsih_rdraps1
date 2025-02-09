@@ -30,7 +30,9 @@ Rust menyediakan beberapa metode berguna untuk bekerja dengan `Result`
 
 
 ## string_kesimpulan
-Gunakan `as_str()` ketika Anda ingin mendapatkan referensi ke string tanpa mengalokasikan memori baru. Ini berguna ketika Anda hanya perlu membaca string dan tidak perlu mengubahnya.
+Dalam Rust, as_str() dan into_owned() adalah dua metode yang digunakan untuk bekerja dengan string, tetapi mereka memiliki tujuan dan hasil yang berbeda. Berikut adalah penjelasan tentang perbedaan keduanya:
+
+* Gunakan `as_str()` ketika Anda ingin mendapatkan referensi ke string tanpa mengalokasikan memori baru. Ini berguna ketika Anda hanya perlu membaca string dan tidak perlu mengubahnya.
 
 * Gunakan `into_owned()` ketika Anda ingin membuat salinan dari string slice (&str) dan mendapatkan String yang dimiliki. Ini berguna ketika Anda perlu menyimpan string dan memastikan bahwa Anda memiliki kepemilikan atas data tersebut.
 
