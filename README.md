@@ -29,6 +29,10 @@ Rust menyediakan beberapa metode berguna untuk bekerja dengan `Result`
 * `as_str()`: Anda dapat mendapatkan referensi &str dari String menggunakan metode as_str.
 
 
+## string_kesimpulan
+Gunakan `as_str()` ketika Anda ingin mendapatkan referensi ke string tanpa mengalokasikan memori baru. Ini berguna ketika Anda hanya perlu membaca string dan tidak perlu mengubahnya.
+
+* Gunakan `into_owned()` ketika Anda ingin membuat salinan dari string slice (&str) dan mendapatkan String yang dimiliki. Ini berguna ketika Anda perlu menyimpan string dan memastikan bahwa Anda memiliki kepemilikan atas data tersebut.
 
 
 
