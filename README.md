@@ -36,6 +36,7 @@ Dalam Rust, as_str() dan into_owned() adalah dua metode yang digunakan untuk bek
 
 * Gunakan `into_owned()` ketika Anda ingin membuat salinan dari string slice (&str) dan mendapatkan String yang dimiliki. Ini berguna ketika Anda perlu menyimpan string dan memastikan bahwa Anda memiliki kepemilikan atas data tersebut.
 
+Keduanya memiliki kegunaan masing-masing tergantung pada konteks di mana Anda bekerja dengan string dalam Rust.
 
 
 
