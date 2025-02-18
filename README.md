@@ -1,3 +1,10 @@
+* `bytes()`: Mengembalikan iterator yang menghasilkan byte dari string.into_bytes(): Mengonversi String menjadi `Vec<u8>`, mengkonsumsi string tersebut.
+* `from_utf8()`: Mengonversi slice byte menjadi string, dengan validasi UTF-8.
+* `from_utf8_lossy()`: Mengonversi slice byte menjadi String, menggantikan byte yang tidak valid dengan karakter pengganti (U+FFFD).
+* `as_mut_bytes(): Mengonversi string slice menjadi mutable byte slice, memungkinkan modifikasi langsung pada data byte.
+* `from_utf16()`: Mengonversi vektor yang berisi data UTF-16 menjadi String, dengan validasi untuk memastikan data yang diberikan valid.
+* `from_utf8_unchecked()`: Mengonversi vektor byte menjadi String tanpa memeriksa validitas UTF-8, sehingga harus digunakan dengan hati-hati.
+
 ## powi
 fungsi powi di Rust digunakan untuk menghitung pangkat dari sebuah bilangan dengan eksponen yang merupakan bilangan bulat (integer). Fungsi ini biasanya digunakan dalam konteks matematika dan pemrograman numerik, di mana Anda perlu melakukan operasi pangkat dengan eksponen yang tidak berubah.
 * Menghitung Kuadrat: Anda dapat menggunakan powi untuk menghitung kuadrat dari sebuah bilangan.
