@@ -1,3 +1,24 @@
+```rust
+use std::io::{self, Write};
+
+fn main() {
+    // Menulis ke output standar
+    print!("Hello, world!");
+    
+    // Memastikan bahwa output ditulis ke layar
+    io::stdout().flush().unwrap();
+}
+```
+Dalam contoh di atas, kita menggunakan `print!` untuk menulis "Hello, world!" ke output standar. Namun, karena `print!` tidak secara otomatis menulis ke output (karena menggunakan buffer), kita perlu memanggil `flush()` untuk memastikan bahwa teks tersebut muncul di layar segera.
+
+Penjelasan:
+* `io::stdout()` mengembalikan handle ke output standar.
+* `flush()` dipanggil untuk memastikan bahwa semua data yang tertunda dalam buffer ditulis ke output.
+* `unwrap()` digunakan untuk menangani kemungkinan kesalahan yang mungkin terjadi saat memanggil `flush()`. Dalam contoh ini, kita mengabaikan kesalahan, tetapi dalam aplikasi nyata, Anda mungkin ingin menangani kesalahan dengan cara yang lebih baik.
+Catatan:
+* Pastikan untuk mengimpor modul yang diperlukan (std::io::{self, Write}) agar dapat menggunakan `flush()`.
+* `flush()` biasanya digunakan dalam konteks di mana Anda ingin memastikan bahwa output ditampilkan kepada pengguna pada waktu tertentu, seperti dalam aplikasi interaktif.
+
 * `bytes()`: Mengembalikan iterator yang menghasilkan byte dari string.into_bytes(): Mengonversi String menjadi `Vec<u8>`, mengkonsumsi string tersebut.
 * `from_utf8()`: Mengonversi slice byte menjadi string, dengan validasi UTF-8.
 * `from_utf8_lossy()`: Mengonversi slice byte menjadi String, menggantikan byte yang tidak valid dengan karakter pengganti (U+FFFD).
