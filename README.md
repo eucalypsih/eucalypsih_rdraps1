@@ -15,6 +15,7 @@ Penjelasan:
 * `io::stdout()` mengembalikan handle ke output standar.
 * `flush()` dipanggil untuk memastikan bahwa semua data yang tertunda dalam buffer ditulis ke output.
 * `unwrap()` digunakan untuk menangani kemungkinan kesalahan yang mungkin terjadi saat memanggil `flush()`. Dalam contoh ini, kita mengabaikan kesalahan, tetapi dalam aplikasi nyata, Anda mungkin ingin menangani kesalahan dengan cara yang lebih baik.
+
 Catatan:
 * Pastikan untuk mengimpor modul yang diperlukan (std::io::{self, Write}) agar dapat menggunakan `flush()`.
 * `flush()` biasanya digunakan dalam konteks di mana Anda ingin memastikan bahwa output ditampilkan kepada pengguna pada waktu tertentu, seperti dalam aplikasi interaktif.
