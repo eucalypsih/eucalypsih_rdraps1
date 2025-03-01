@@ -19,6 +19,7 @@ Penjelasan:
 Catatan:
 * Pastikan untuk mengimpor modul yang diperlukan (std::io::{self, Write}) agar dapat menggunakan `flush()`.
 * `flush()` biasanya digunakan dalam konteks di mana Anda ingin memastikan bahwa output ditampilkan kepada pengguna pada waktu tertentu, seperti dalam aplikasi interaktif.
+* `flush()` setelah menulis ke stream, Anda mungkin ingin memastikan bahwa semua data yang ditulis telah dikirim ke penerima. Metode flush digunakan untuk memastikan bahwa semua buffer ditulis ke stream.
 
 * `bytes()`: Mengembalikan iterator yang menghasilkan byte dari string.into_bytes(): Mengonversi String menjadi `Vec<u8>`, mengkonsumsi string tersebut.
 * `from_utf8()`: Mengonversi slice byte menjadi string, dengan validasi UTF-8.
